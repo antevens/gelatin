@@ -163,7 +163,7 @@
             <key code="14" output="F"/>
             <key code="15" output="P"/>
             <key code="16" output="J"/>
-            <key code="17" output="G"/>
+            <key code="17" action="G"/>
             <key code="18" output="!"/>
             <key code="19" output="@"/>
             <key code="20" output="#"/>
@@ -177,14 +177,14 @@
             <key code="28" output="*"/>
             <key code="29" output="="/>
             <key code="30" output="}"/>
-            <key code="31" output="Y"/>
+            <key code="31" action="Y"/>
             <key code="32" output="L"/>
             <key code="33" output="{"/>
             <key code="34" action="U"/>
             <key code="35" output="\"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" action="I"/>
-            <key code="38" output="A"/>
+            <key code="38" action="A"/>
             <key code="39" output="_"/>
             <key code="40" action="E"/>
             <key code="41" action="O"/>
@@ -276,7 +276,7 @@
             <key code="14" output="F"/>
             <key code="15" output="P"/>
             <key code="16" output="J"/>
-            <key code="17" output="G"/>
+            <key code="17" action="G"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
             <key code="20" output="3"/>
@@ -290,14 +290,14 @@
             <key code="28" output="8"/>
             <key code="29" output="0"/>
             <key code="30" output="]"/>
-            <key code="31" output="Y"/>
+            <key code="31" action="Y"/>
             <key code="32" output="L"/>
             <key code="33" output="["/>
             <key code="34" action="U"/>
             <key code="35" output="/"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" action="I"/>
-            <key code="38" output="A"/>
+            <key code="38" action="A"/>
             <key code="39" output="-"/>
             <key code="40" action="E"/>
             <key code="41" action="O"/>
@@ -462,7 +462,7 @@
             <key code="35" action="macron"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="İ"/>
-            <key code="38" output="Æ"/>
+            <key code="38" action="Æ"/>
             <key code="39" action="grave"/>
             <key code="40" output=""/>
             <key code="41" output="Œ"/>
@@ -523,7 +523,7 @@
             <key code="3" output="Þ"/>
             <key code="5" output="Ð"/>
             <key code="36" output="&#x000D;"/>
-            <key code="38" output="Æ"/>
+            <key code="38" action="Æ"/>
             <key code="40" output="Œ"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
@@ -794,6 +794,7 @@
         </action>
         <action id="grave">
             <when state="none" next="grave"/>
+            <when state="macron" next="grave+macron"/>
         </action>
         <action id="inverted breve">
             <when state="none" next="inverted breve"/>
@@ -801,8 +802,9 @@
         <action id="macron">
             <when state="none" next="macron"/>
             <when state="diaeresis" next="diaeresis+macron"/>
-            <when state="ring above" next="macron+ring above"/>
+            <when state="grave" next="grave+macron"/>
             <when state="ogonek" next="macron+ogonek"/>
+            <when state="ring above" next="macron+ring above"/>
             <when state="tilde" next="macron+tilde"/>
        </action>
         <action id="middle dot">
@@ -837,6 +839,7 @@
         <action id="e">
             <when state="none" output="e"/>
             <when state="acute" output="é"/>
+            <when state="grave+macron" output="ḕ"/>
             <when state="macron" output="ē"/>
         </action>
         <action id="g">
@@ -854,6 +857,7 @@
             <when state="acute" output="ó"/>
             <when state="diaeresis" output="ö"/>
             <when state="diaeresis+macron" output="ȫ"/>
+            <when state="grave+macron" output="ṑ"/>
             <when state="macron" output="ō"/>
             <when state="macron+ring above" output="ȱ"/>
             <when state="macron+ogonek" output="ǭ"/>
@@ -876,21 +880,52 @@
             <when state="none" output="œ"/>
             <when state="macron" output="ǣ"/>
         </action>
+        <action id="A">
+            <when state="none" output="A"/>
+            <when state="macron" output="Ā"/>
+            <when state="diaeresis+macron" output="Ǟ"/>
+            <when state="macron+ring above" output="Ǡ"/>
+        </action>
         <action id="E">
             <when state="none" output="E"/>
+            <when state="macron" output="Ē"/>
+            <when state="acute+macron" output="Ḗ"/>
+            <when state="grave+macron" output="Ḕ"/>
+        </action>
+        <action id="G">
+            <when state="none" output="G"/>
+            <when state="macron" output="Ḡ"/>
         </action>
         <action id="I">
             <when state="none" output="I"/>
             <when state="acute+diaeresis" output="Ḯ"/>
+            <when state="macron" output="Ī"/>
         </action>
         <action id="O">
             <when state="none" output="O"/>
+            <when state="acute+macron" output="Ṓ"/>
             <when state="diaeresis" output="Ö"/>
+            <when state="diaeresis+macron" output="Ȫ"/>
+            <when state="grave+macron" output="Ṑ"/>
+            <when state="macron" output="Ō"/>
+            <when state="macron+ogonek" output="Ǭ"/>
+            <when state="macron+ring above" output="Ȱ"/>
+            <when state="macron+tilde" output="Ȭ"/>
             <when state="solidus" output="Ø"/>
         </action>
         <action id="U">
             <when state="none" output="U"/>
             <when state="acute+diaeresis" output="Ǘ"/>
+            <when state="diaeresis+macron" output="Ǖ"/>
+            <when state="macron" output="Ū"/>
+        </action>
+        <action id="Y">
+            <when state="none" output="Y"/>
+            <when state="macron" output="Ȳ"/>
+        </action>
+        <action id="Æ">
+            <when state="none" output="Æ"/>
+            <when state="macron" output="Ǣ"/>
         </action>
         <action id=".">
             <when state="none" output="."/>
