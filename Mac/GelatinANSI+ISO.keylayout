@@ -146,22 +146,22 @@
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="1"> <!-- Shift -->
-            <key code="0" output="N"/>
-            <key code="1" output="R"/>
-            <key code="2" output="S"/>
+            <key code="0" action="N"/>
+            <key code="1" action="R"/>
+            <key code="2" action="S"/>
             <key code="3" output="T"/>
             <key code="4" output="H"/>
             <key code="5" output="D"/>
             <key code="6" output="Z"/>
             <key code="7" output="X"/>
-            <key code="8" output="C"/>
+            <key code="8" action="C"/>
             <key code="9" output="V"/>
             <key code="10" action="caron"/>
             <key code="11" output="B"/>
             <key code="12" output="Q"/>
-            <key code="13" output="W"/>
+            <key code="13" action="W"/>
             <key code="14" output="F"/>
-            <key code="15" output="P"/>
+            <key code="15" action="P"/>
             <key code="16" output="J"/>
             <key code="17" action="G"/>
             <key code="18" output="!"/>
@@ -178,7 +178,7 @@
             <key code="29" output="="/>
             <key code="30" output="}"/>
             <key code="31" action="Y"/>
-            <key code="32" output="L"/>
+            <key code="32" action="L"/>
             <key code="33" output="{"/>
             <key code="34" action="U"/>
             <key code="35" output="\"/>
@@ -191,8 +191,8 @@
             <key code="42" output="&#x0022;"/>
             <key code="43" output=";"/>
             <key code="44" output="?"/>
-            <key code="45" output="K"/>
-            <key code="46" output="M"/>
+            <key code="45" action="K"/>
+            <key code="46" action="M"/>
             <key code="47" output=":"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
@@ -259,22 +259,22 @@
             <key code="126" output="&#x001E;"/>
         </keyMap>
         <keyMap index="2"> <!-- Caps Lock -->
-            <key code="0" output="N"/>
-            <key code="1" output="R"/>
-            <key code="2" output="S"/>
+            <key code="0" action="N"/>
+            <key code="1" action="R"/>
+            <key code="2" action="S"/>
             <key code="3" output="T"/>
             <key code="4" output="H"/>
             <key code="5" output="D"/>
             <key code="6" output="Z"/>
             <key code="7" output="X"/>
-            <key code="8" output="C"/>
+            <key code="8" action="C"/>
             <key code="9" output="V"/>
             <key code="10" action="circumflex"/>
             <key code="11" output="B"/>
             <key code="12" output="Q"/>
-            <key code="13" output="W"/>
+            <key code="13" action="W"/>
             <key code="14" output="F"/>
-            <key code="15" output="P"/>
+            <key code="15" action="P"/>
             <key code="16" output="J"/>
             <key code="17" action="G"/>
             <key code="18" output="1"/>
@@ -291,7 +291,7 @@
             <key code="29" output="0"/>
             <key code="30" output="]"/>
             <key code="31" action="Y"/>
-            <key code="32" output="L"/>
+            <key code="32" action="L"/>
             <key code="33" output="["/>
             <key code="34" action="U"/>
             <key code="35" output="/"/>
@@ -304,8 +304,8 @@
             <key code="42" output="&#x0027;"/>
             <key code="43" output=","/>
             <key code="44" output="|"/>
-            <key code="45" output="K"/>
-            <key code="46" output="M"/>
+            <key code="45" action="K"/>
+            <key code="46" action="M"/>
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
@@ -953,27 +953,52 @@
         </action>
         <action id="A">
             <when state="none" output="A"/>
+            <when state="acute" output="Á"/>
             <when state="macron" output="Ā"/>
             <when state="diaeresis+macron" output="Ǟ"/>
             <when state="macron+ring above" output="Ǡ"/>
         </action>
+        <action id="C">
+            <when state="none" output="C"/>
+            <when state="acute" output="Ć"/>
+        </action>
         <action id="E">
             <when state="none" output="E"/>
+            <when state="acute" output="É"/>
             <when state="macron" output="Ē"/>
             <when state="acute+macron" output="Ḗ"/>
             <when state="grave+macron" output="Ḕ"/>
         </action>
         <action id="G">
             <when state="none" output="G"/>
+            <when state="acute" output="Ǵ"/>
             <when state="macron" output="Ḡ"/>
         </action>
         <action id="I">
             <when state="none" output="I"/>
+            <when state="acute" output="Í"/>
             <when state="acute+diaeresis" output="Ḯ"/>
             <when state="macron" output="Ī"/>
         </action>
+        <action id="K">
+            <when state="none" output="K"/>
+            <when state="acute" output="Ḱ"/>
+        </action>
+        <action id="L">
+            <when state="none" output="L"/>
+            <when state="acute" output="Ĺ"/>
+        </action>
+        <action id="M">
+            <when state="none" output="M"/>
+            <when state="acute" output="Ḿ"/>
+        </action>
+        <action id="N">
+            <when state="none" output="N"/>
+            <when state="acute" output="Ń"/>
+        </action>
         <action id="O">
             <when state="none" output="O"/>
+            <when state="acute" output="Ó"/>
             <when state="acute+macron" output="Ṓ"/>
             <when state="diaeresis" output="Ö"/>
             <when state="diaeresis+macron" output="Ȫ"/>
@@ -984,11 +1009,28 @@
             <when state="macron+tilde" output="Ȭ"/>
             <when state="solidus" output="Ø"/>
         </action>
+        <action id="P">
+            <when state="none" output="P"/>
+            <when state="acute" output="Ṕ"/>
+        </action>
+        <action id="R">
+            <when state="none" output="R"/>
+            <when state="acute" output="Ŕ"/>
+        </action>
+        <action id="S">
+            <when state="none" output="S"/>
+            <when state="acute" output="Ś"/>
+        </action>
         <action id="U">
             <when state="none" output="U"/>
+            <when state="acute" output="Ú"/>
             <when state="acute+diaeresis" output="Ǘ"/>
             <when state="diaeresis+macron" output="Ǖ"/>
             <when state="macron" output="Ū"/>
+        </action>
+        <action id="W">
+            <when state="none" output="W"/>
+            <when state="macron" output="Ẃ"/>
         </action>
         <action id="Y">
             <when state="none" output="Y"/>
@@ -996,6 +1038,7 @@
         </action>
         <action id="Æ">
             <when state="none" output="Æ"/>
+            <when state="acute" output="Ǽ"/>
             <when state="macron" output="Ǣ"/>
         </action>
         <action id=".">
