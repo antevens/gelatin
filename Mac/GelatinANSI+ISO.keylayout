@@ -37,7 +37,7 @@
             <key code="1" output="r"/>
             <key code="2" action="s"/>
             <key code="3" output="t"/>
-            <key code="4" output="h"/>
+            <key code="4" action="h"/>
             <key code="5" output="d"/>
             <key code="6" action="z"/>
             <key code="7" output="x"/>
@@ -49,7 +49,7 @@
             <key code="13" action="w"/>
             <key code="14" output="f"/>
             <key code="15" action="p"/>
-            <key code="16" output="j"/>
+            <key code="16" action="j"/>
             <key code="17" action="g"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
@@ -150,7 +150,7 @@
             <key code="1" action="R"/>
             <key code="2" action="S"/>
             <key code="3" output="T"/>
-            <key code="4" output="H"/>
+            <key code="4" action="H"/>
             <key code="5" output="D"/>
             <key code="6" action="Z"/>
             <key code="7" output="X"/>
@@ -263,7 +263,7 @@
             <key code="1" action="R"/>
             <key code="2" action="S"/>
             <key code="3" output="T"/>
-            <key code="4" output="H"/>
+            <key code="4" action="H"/>
             <key code="5" output="D"/>
             <key code="6" action="Z"/>
             <key code="7" output="X"/>
@@ -576,7 +576,7 @@
             <key code="1" action="r"/>
             <key code="2" action="s"/>
             <key code="3" output="t"/>
-            <key code="4" output="h"/>
+            <key code="4" action="h"/>
             <key code="5" output="d"/>
             <key code="6" action="z"/>
             <key code="7" output="x"/>
@@ -588,7 +588,7 @@
             <key code="13" action="w"/>
             <key code="14" output="f"/>
             <key code="15" action="p"/>
-            <key code="16" output="j"/>
+            <key code="16" action="j"/>
             <key code="17" output="g"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
@@ -855,8 +855,10 @@
             <when state="acute+circumflex" output="ấ"/>
             <when state="acute+ring above" output="ǻ"/>
             <when state="breve+grave" output="ằ"/>
+            <when state="circumflex" output="â"/>
             <when state="circumflex+grave" output="ầ"/>
             <when state="diaeresis+macron" output="ǟ"/>
+            <when state="double grave" output="ȁ"/>
             <when state="grave" output="à"/>
             <when state="macron" output="ā"/>
             <when state="macron+ring above" output="ǡ"/>
@@ -864,6 +866,7 @@
         <action id="c">
             <when state="none" output="c"/>
             <when state="acute" output="ć"/>
+            <when state="circumflex" output="ĉ"/>
             <when state="acute+cedilla" output="ḉ"/>
         </action>
         <action id="e">
@@ -871,22 +874,36 @@
             <when state="acute" output="é"/>
             <when state="acute+circumflex" output="ế"/>
             <when state="acute+macron" output="ḗ"/>
+            <when state="circumflex" output="ê"/>
             <when state="circumflex+grave" output="ề"/>
             <when state="grave" output="è"/>
+            <when state="double grave" output="ȅ"/>
             <when state="grave+macron" output="ḕ"/>
             <when state="macron" output="ē"/>
         </action>
         <action id="g">
             <when state="none" output="g"/>
             <when state="acute" output="ǵ"/>
+            <when state="circumflex" output="ĝ"/>
             <when state="macron" output="ḡ"/>
+        </action>
+        <action id="h">
+            <when state="none" output="h"/>
+            <when state="circumflex" output="ĥ"/>
+            <when state="macron" output="ħ"/>
         </action>
         <action id="i">
             <when state="none" output="i"/>
             <when state="acute" output="í"/>
             <when state="acute+diaeresis" output="ḯ"/>
+            <when state="circumflex" output="î"/>
+            <when state="double grave" output="ȉ"/>
             <when state="grave" output="ì"/>
             <when state="macron" output="ī"/>
+        </action>
+        <action id="j">
+            <when state="none" output="j"/>
+            <when state="circumflex" output="ĵ"/>
         </action>
         <action id="k">
             <when state="none" output="k"/>
@@ -895,6 +912,7 @@
         <action id="l">
             <when state="none" output="l"/>
             <when state="acute" output="ĺ"/>
+            <when state="solidus" output="ł"/>
         </action>
         <action id="m">
             <when state="none" output="m"/>
@@ -915,6 +933,7 @@
             <when state="circumflex+grave" output="ồ"/>
             <when state="diaeresis" output="ö"/>
             <when state="diaeresis+macron" output="ȫ"/>
+            <when state="double grave" output="ȍ"/>
             <when state="grave" output="ò"/>
             <when state="grave+macron" output="ṑ"/>
             <when state="macron" output="ō"/>
@@ -930,25 +949,30 @@
         <action id="r">
             <when state="none" output="r"/>
             <when state="acute" output="ŕ"/>
+            <when state="double grave" output="ȑ"/>
         </action>
         <action id="s">
             <when state="none" output="s"/>
             <when state="acute" output="ś"/>
             <when state="acute+ring above" output="ṥ"/>
+            <when state="circumflex" output="ŝ"/>
         </action>
         <action id="u">
             <when state="none" output="u"/>
             <when state="acute" output="ú"/>
             <when state="acute+diaeresis" output="ǘ"/>
             <when state="acute+tilde" output="ṹ"/>
+            <when state="circumflex" output="û"/>
             <when state="grave" output="ù"/>
             <when state="diaeresis+macron" output="ǖ"/>
             <when state="diaeresis+grave" output="ǜ"/>
+            <when state="double grave" output="ȕ"/>
             <when state="macron" output="ū"/>
         </action>
         <action id="w">
             <when state="none" output="w"/>
             <when state="acute" output="ẃ"/>
+            <when state="circumflex" output="ŵ"/>
             <when state="grave" output="ẁ"/>
         </action>
         <action id="y">
@@ -977,6 +1001,7 @@
             <when state="acute+ring above" output="Ǻ"/>
             <when state="breve+grave" output="Ằ"/>
             <when state="circumflex+grave" output="Ầ"/>
+            <when state="double grave" output="Ȁ"/>
             <when state="grave" output="À"/>
             <when state="macron" output="Ā"/>
             <when state="diaeresis+macron" output="Ǟ"/>
@@ -994,6 +1019,7 @@
             <when state="acute+diaeresis" output="Ḯ"/>
             <when state="acute+macron" output="Ḗ"/>
             <when state="circumflex+grave" output="Ề"/>
+            <when state="double grave" output="Ȅ"/>
             <when state="grave" output="È"/>
             <when state="grave+macron" output="Ḕ"/>
             <when state="macron" output="Ē"/>
@@ -1003,10 +1029,15 @@
             <when state="acute" output="Ǵ"/>
             <when state="macron" output="Ḡ"/>
         </action>
+        <action id="H">
+            <when state="none" output="H"/>
+            <when state="macron" output="Ħ"/>
+        </action>
         <action id="I">
             <when state="none" output="I"/>
             <when state="acute" output="Í"/>
             <when state="acute+diaeresis" output="Ḯ"/>
+            <when state="double grave" output="Ȉ"/>
             <when state="grave" output="Ì"/>
             <when state="macron" output="Ī"/>
         </action>
@@ -1017,6 +1048,7 @@
         <action id="L">
             <when state="none" output="L"/>
             <when state="acute" output="Ĺ"/>
+            <when state="solidus" output="Ł"/>
         </action>
         <action id="M">
             <when state="none" output="M"/>
@@ -1037,6 +1069,7 @@
             <when state="circumflex+grave" output="Ồ"/>
             <when state="diaeresis" output="Ö"/>
             <when state="diaeresis+macron" output="Ȫ"/>
+            <when state="double grave" output="Ȍ"/>
             <when state="grave" output="Ò"/>
             <when state="grave+macron" output="Ṑ"/>
             <when state="macron" output="Ō"/>
@@ -1052,6 +1085,7 @@
         <action id="R">
             <when state="none" output="R"/>
             <when state="acute" output="Ŕ"/>
+            <when state="double grave" output="Ȑ"/>
         </action>
         <action id="S">
             <when state="none" output="S"/>
@@ -1065,6 +1099,7 @@
             <when state="acute+tilde" output="Ṹ"/>
             <when state="diaeresis+grave" output="Ǜ"/>
             <when state="diaeresis+macron" output="Ǖ"/>
+            <when state="double grave" output="Ȕ"/>
             <when state="grave" output="Ù"/>
             <when state="macron" output="Ū"/>
         </action>
