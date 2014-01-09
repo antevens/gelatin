@@ -886,6 +886,7 @@
             <when state="grave" output="à"/>
             <when state="macron" output="ā"/>
             <when state="macron+dot ring above" output="ǡ"/>
+            <when state="inverted breve" output="ȃ"/>
         </action>
         <action id="c">
             <when state="none" output="c"/>
@@ -915,6 +916,7 @@
             <when state="double grave" output="ȅ"/>
             <when state="grave+macron" output="ḕ"/>
             <when state="macron" output="ē"/>
+            <when state="inverted breve" output="ȇ"/>
         </action>
         <action id="g">
             <when state="none" output="g"/>
@@ -940,6 +942,7 @@
             <when state="double grave" output="ȉ"/>
             <when state="grave" output="ì"/>
             <when state="macron" output="ī"/>
+            <when state="inverted breve" output="ȋ"/>
         </action>
         <action id="j">
             <when state="none" output="j"/>
@@ -987,6 +990,7 @@
             <when state="macron+dot-ring above" output="ȱ"/>
             <when state="macron+ogonek" output="ǭ"/>
             <when state="macron+tilde" output="ȭ"/>
+            <when state="inverted breve" output="ȏ"/>
             <when state="solidus" output="ø"/>
         </action>
         <action id="p">
@@ -998,6 +1002,7 @@
             <when state="acute" output="ŕ"/>
             <when state="caron" output="ř"/>
             <when state="double grave" output="ȑ"/>
+            <when state="inverted breve" output="ȓ"/>
         </action>
         <action id="s">
             <when state="none" output="s"/>
@@ -1025,6 +1030,7 @@
             <when state="diaeresis+grave" output="ǜ"/>
             <when state="double grave" output="ȕ"/>
             <when state="macron" output="ū"/>
+            <when state="inverted breve" output="ȗ"/>
         </action>
         <action id="w">
             <when state="none" output="w"/>
@@ -1071,6 +1077,7 @@
             <when state="macron" output="Ā"/>
             <when state="diaeresis+macron" output="Ǟ"/>
             <when state="macron+dot-ring above" output="Ǡ"/>
+            <when state="inverted breve" output="Ȃ"/>
         </action>
         <action id="C">
             <when state="none" output="C"/>
@@ -1101,6 +1108,7 @@
             <when state="grave" output="È"/>
             <when state="grave+macron" output="Ḕ"/>
             <when state="macron" output="Ē"/>
+            <when state="inverted breve" output="Ȇ"/>
         </action>
         <action id="G">
             <when state="none" output="G"/>
@@ -1125,6 +1133,7 @@
             <when state="circumflex" output="Î"/>
             <when state="grave" output="Ì"/>
             <when state="macron" output="Ī"/>
+            <when state="inverted breve" output="Ȋ"/>
         </action>
         <action id="J">
             <when state="none" output="J"/>
@@ -1172,6 +1181,7 @@
             <when state="macron+ogonek" output="Ǭ"/>
             <when state="macron+dot-ring above" output="Ȱ"/>
             <when state="macron+tilde" output="Ȭ"/>
+            <when state="inverted breve" output="Ȏ"/>
             <when state="solidus" output="Ø"/>
         </action>
         <action id="P">
@@ -1183,6 +1193,7 @@
             <when state="acute" output="Ŕ"/>
             <when state="caron" output="Ř"/>
             <when state="double grave" output="Ȑ"/>
+            <when state="inverted breve" output="Ȓ"/>
         </action>
         <action id="S">
             <when state="none" output="S"/>
@@ -1210,6 +1221,7 @@
             <when state="double grave" output="Ȕ"/>
             <when state="grave" output="Ù"/>
             <when state="macron" output="Ū"/>
+            <when state="inverted breve" output="Ȗ"/>
         </action>
         <action id="W">
             <when state="none" output="W"/>
