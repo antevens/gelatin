@@ -1312,7 +1312,7 @@
         <when state="diaeresis+grave" output="¨`"/>
         <when state="diaeresis+macron" output="¨¯"/>
         <when state="double acute" output="˝"/>
-        <when state="double grave" output=" ̏"/>
+        <when state="double grave" output="̏"/>
         <when state="grave" output="`"/>
         <when state="inverted breve" output=" ̑"/>
         <when state="macron" output="¯"/>
