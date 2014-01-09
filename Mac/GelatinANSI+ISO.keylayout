@@ -995,6 +995,7 @@
             <when state="circumflex+tilde" output="ỗ"/>
             <when state="diaeresis" output="ö"/>
             <when state="diaeresis+macron" output="ȫ"/>
+            <when state="double acute" output="ő"/>
             <when state="double grave" output="ȍ"/>
             <when state="grave" output="ò"/>
             <when state="grave+macron" output="ṑ"/>
@@ -1044,6 +1045,7 @@
             <when state="grave" output="ù"/>
             <when state="diaeresis+macron" output="ǖ"/>
             <when state="diaeresis+grave" output="ǜ"/>
+            <when state="double acute" output="ű"/>
             <when state="double grave" output="ȕ"/>
             <when state="macron" output="ū"/>
             <when state="inverted breve" output="ȗ"/>
@@ -1190,6 +1192,7 @@
             <when state="circumflex+tilde" output="Ỗ"/>
             <when state="diaeresis" output="Ö"/>
             <when state="diaeresis+macron" output="Ȫ"/>
+            <when state="double acute" output="Ő"/>
             <when state="double grave" output="Ȍ"/>
             <when state="grave" output="Ò"/>
             <when state="grave+macron" output="Ṑ"/>
@@ -1234,6 +1237,7 @@
             <when state="circumflex" output="Û"/>
             <when state="diaeresis+grave" output="Ǜ"/>
             <when state="diaeresis+macron" output="Ǖ"/>
+            <when state="double acute" output="Ű"/>
             <when state="double grave" output="Ȕ"/>
             <when state="grave" output="Ù"/>
             <when state="macron" output="Ū"/>
