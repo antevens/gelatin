@@ -779,7 +779,9 @@
         <action id="breve">
             <when state="none" next="breve"/>
             <when state="acute" next="acute+breve"/>
+            <when state="cedilla" next="breve+cedilla"/>
             <when state="grave" next="breve+grave"/>
+            <when state="tilde" next="breve+tilde"/>
         </action>
         <action id="caron">
             <when state="none" next="caron"/>
@@ -789,6 +791,7 @@
         <action id="cedilla">
             <when state="none" next="cedilla"/>
             <when state="acute" next="acute+cedilla"/>
+            <when state="breve" next="breve+cedilla"/>
         </action>
         <action id="circumflex">
             <when state="none" next="circumflex"/>
@@ -851,6 +854,7 @@
         <action id="tilde">
             <when state="none" next="tilde"/>
             <when state="acute" next="acute+tilde"/>
+            <when state="breve" next="breve+tilde"/>
             <when state="circumflex" next="circumflex+tilde"/>
             <when state="macron" next="macron+tilde"/>
         </action>
@@ -870,7 +874,9 @@
             <when state="acute+breve" output="ắ"/>
             <when state="acute+circumflex" output="ấ"/>
             <when state="acute+dot ring above" output="ǻ"/>
+            <when state="breve" output="ă"/>
             <when state="breve+grave" output="ằ"/>
+            <when state="breve+tilde" output="ẵ"/>
             <when state="caron" output="ǎ"/>
             <when state="circumflex" output="â"/>
             <when state="circumflex+grave" output="ầ"/>
@@ -899,6 +905,8 @@
             <when state="acute" output="é"/>
             <when state="acute+circumflex" output="ế"/>
             <when state="acute+macron" output="ḗ"/>
+            <when state="breve" output="ĕ"/>
+            <when state="breve+cedilla" output="ḝ"/>
             <when state="caron" output="ě"/>
             <when state="circumflex" output="ê"/>
             <when state="circumflex+grave" output="ề"/>
@@ -911,6 +919,7 @@
         <action id="g">
             <when state="none" output="g"/>
             <when state="acute" output="ǵ"/>
+            <when state="breve" output="ğ"/>
             <when state="caron" output="ǧ"/>
             <when state="circumflex" output="ĝ"/>
             <when state="macron" output="ḡ"/>
@@ -925,6 +934,7 @@
             <when state="none" output="i"/>
             <when state="acute" output="í"/>
             <when state="acute+diaeresis" output="ḯ"/>
+            <when state="breve" output="ĭ"/>
             <when state="caron" output="ǐ"/>
             <when state="circumflex" output="î"/>
             <when state="double grave" output="ȉ"/>
@@ -964,6 +974,7 @@
             <when state="acute+macron" output="ṓ"/>
             <when state="acute+solidus" output="ǿ"/>
             <when state="acute+tilde" output="ṍ"/>
+            <when state="breve" output="ŏ"/>
             <when state="caron" output="ǒ"/>
             <when state="circumflex+grave" output="ồ"/>
             <when state="circumflex+tilde" output="ỗ"/>
@@ -1005,6 +1016,7 @@
             <when state="acute" output="ú"/>
             <when state="acute+diaeresis" output="ǘ"/>
             <when state="acute+tilde" output="ṹ"/>
+            <when state="breve" output="ŭ"/>
             <when state="caron" output="ǔ"/>
             <when state="caron+diaeresis" output="ǚ"/>
             <when state="circumflex" output="û"/>
@@ -1047,7 +1059,9 @@
             <when state="acute+breve" output="Ắ"/>
             <when state="acute+circumflex" output="Ấ"/>
             <when state="acute+dot-ring above" output="Ǻ"/>
+            <when state="breve" output="Ă"/>
             <when state="breve+grave" output="Ằ"/>
+            <when state="breve+tilde" output="Ẵ"/>
             <when state="caron" output="Ǎ"/>
             <when state="circumflex" output="Â"/>
             <when state="circumflex+grave" output="Ầ"/>
@@ -1077,6 +1091,8 @@
             <when state="acute+circumflex" output="Ế"/>
             <when state="acute+diaeresis" output="Ḯ"/>
             <when state="acute+macron" output="Ḗ"/>
+            <when state="breve" output="Ĕ"/>
+            <when state="breve+cedilla" output="Ḝ"/>
             <when state="caron" output="Ě"/>
             <when state="circumflex" output="Ê"/>
             <when state="circumflex+grave" output="Ề"/>
@@ -1089,6 +1105,7 @@
         <action id="G">
             <when state="none" output="G"/>
             <when state="acute" output="Ǵ"/>
+            <when state="breve" output="Ğ"/>
             <when state="caron" output="Ǧ"/>
             <when state="circumflex" output="Ê"/>
             <when state="macron" output="Ḡ"/>
@@ -1102,6 +1119,7 @@
             <when state="none" output="I"/>
             <when state="acute" output="Í"/>
             <when state="acute+diaeresis" output="Ḯ"/>
+            <when state="breve" output="Ĭ"/>
             <when state="caron" output="Ǐ"/>
             <when state="double grave" output="Ȉ"/>
             <when state="circumflex" output="Î"/>
@@ -1140,6 +1158,7 @@
             <when state="acute+circumflex" output="Ố"/>
             <when state="acute+solidus" output="Ǿ"/>
             <when state="acute+tilde" output="Ṍ"/>
+            <when state="breve" output="Ŏ"/>
             <when state="caron" output="Ǒ"/>
             <when state="circumflex" output="Ô"/>
             <when state="circumflex+grave" output="Ồ"/>
@@ -1182,6 +1201,7 @@
             <when state="acute" output="Ú"/>
             <when state="acute+diaeresis" output="Ǘ"/>
             <when state="acute+tilde" output="Ṹ"/>
+            <when state="breve" output="Ŭ"/>
             <when state="caron" output="Ǔ"/>
             <when state="caron+diaeresis" output="Ǚ"/>
             <when state="circumflex" output="Û"/>
@@ -1232,7 +1252,9 @@
         <when state="acute+solidus" output="´/"/>
         <when state="acute+tilde" output="´~"/>
         <when state="breve" output="˘"/>
+        <when state="breve+cedilla" output="˘¸"/>
         <when state="breve+grave" output="˘`"/>
+        <when state="breve+tilde" output="˘~"/>
         <when state="caron" output="ˇ"/>
         <when state="caron+diaeresis" output="ˇ¨"/>
         <when state="caron+dot-ring above" output="ˇ˚"/>
