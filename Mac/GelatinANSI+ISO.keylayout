@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Last edited by Ukelele version 2.2.6 on 2014-01-05 at 12:22 (EST)-->
-<keyboard group="126" id="-69" name="Gelatin" maxout="2">
+<keyboard group="0" id="69" name="Gelatin" maxout="2">
     <layouts>
-        <layout first="0" last="0" modifiers="48" mapSet="ANSI"/>
+        <layout first="0" last="0" modifiers="48" mapSet="ANSI+ISO"/>
     </layouts>
     <modifierMap id="48" defaultIndex="0">
         <keyMapSelect mapIndex="0">
@@ -31,7 +31,7 @@
             <modifier keys="anyShift? caps? anyOption? anyControl"/>
         </keyMapSelect>
     </modifierMap>
-    <keyMapSet id="ANSI">
+    <keyMapSet id="ANSI+ISO">
         <keyMap index="0"> <!-- No modifiers -->
             <key code="0" action="n"/>
             <key code="1" output="r"/>
@@ -838,8 +838,8 @@
             <when state="none" next="ogonek"/>
             <when state="macron" next="macron+ogonek"/>
         </action>
-        <action id="dot-ring above"> 
-            <when state="none" next="dot ring above"/>
+        <action id="dot-ring above">
+            <when state="none" next="dot-ring above"/>
             <when state="acute" next="acute+dot-ring above"/>
             <when state="macron" next="macron+dot-ring above"/>
         </action>
@@ -1272,24 +1272,25 @@
         <action id=".">
             <when state="none" output="."/>
             <when state="acute" next="acute+diaeresis"/>
-            <when state="special" next="…"/>
+            <when state="special" output="…"/>
         </action>
         <action id="less than">
             <when state="none" output="&#x003C;"/>
-            <when state="special" next="≤"/>
+            <when state="special" output="≤"/>
         </action>
         <action id="greater than">
             <when state="none" output="&#x003E;"/>
-            <when state="special" next="≥"/>
+            <when state="special" output="≥"/>
         </action>
         <action id="=">
             <when state="none" output="="/>
-            <when state="solidus" next="≠"/>
+            <when state="solidus" output="≠"/>
         </action>
     </actions>
     <terminators>
         <when state="acute" output="´"/>
         <when state="acute+breve" output="´˘"/>
+        <when state="acute+cedilla" output="´¸"/>
         <when state="acute+circumflex" output="´^"/>
         <when state="acute+diaeresis" output="´¨"/>
         <when state="acute+macron" output="´¯"/>
@@ -1314,6 +1315,7 @@
         <when state="double acute" output="˝"/>
         <when state="double grave" output=" ̏"/>
         <when state="grave" output="`"/>
+        <when state="grave+macron" output="`¯"/>
         <when state="inverted breve" output=" ̑"/>
         <when state="macron" output="¯"/>
         <when state="macron+dot-ring above" output="¯˚"/>
