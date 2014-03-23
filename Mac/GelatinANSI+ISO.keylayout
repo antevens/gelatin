@@ -400,9 +400,9 @@
             <key code="39" action="acute"/>
             <key code="40" output=""/>
             <key code="41" action="œ"/>
-            <key code="42" action="¿"/>
+            <key code="42" output="¿"/>
             <key code="43" action="ogonek"/>
-            <key code="44" output="solidus"/>
+            <key code="44" action="solidus"/>
             <key code="47" action="diaeresis"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
