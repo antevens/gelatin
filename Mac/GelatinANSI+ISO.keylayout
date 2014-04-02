@@ -393,11 +393,11 @@
             <key code="10" action="breve"/>
             <key code="24" output="»"/>
             <key code="27" output="«"/>
-            <key code="35" action="tilde"/>
+            <key code="35" action="acute"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="ı"/>
             <key code="38" output="æ"/>
-            <key code="39" action="acute"/>
+            <key code="39" action="tilde"/>
             <key code="40" output=""/>
             <key code="41" action="œ"/>
             <key code="42" output="¿"/>
