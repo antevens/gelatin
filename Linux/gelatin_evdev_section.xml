@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>gelatin</name>
+        <shortDescription>Global Ergonomic Latin Keyboard Layout</shortDescription>
+        <description>A colemak based keyboard layout optimised for use with any latin based character set</description>
+        <languageList><iso639Id>eng</iso639Id></languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>gelatin-ergodox</name>
+            <description>Ergodox variant of the Gelatin Keyboard Layout, assumes Gelatin firmware layout loaded on Teensy</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+  </layoutList>
+</xkbConfigRegistry>
