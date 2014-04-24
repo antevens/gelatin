@@ -21,7 +21,7 @@ def add_layout():
                     first = data
                     first_layout = first.find('layoutList')
                 else:
-                    layout_list = first.find('layoutList')
+                    layout_list = data.find('layoutList')
                     first_layout.extend(layout_list)
 
             if first is not None:
