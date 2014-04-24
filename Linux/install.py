@@ -25,12 +25,15 @@ def add_layout():
                     first_layout.extend(layout_list)
 
             if first is not None:
-                with open(os.path.join(rules_dir, 'evdev2.xml'), "w") as f:
+                with open(os.path.join(rules_dir, 'evdev.xml'), "w") as f:
                     f.write(et.tostring(first, encoding='utf-8'))
 
 
-def switch_layout():
-    if call(['setxkbmap', '-v', 'us', '-variant', 'gelatin']):
+def switch_layout(variant=None):
+    set_command = ['setxkbmap', '-v', 'gelatin']
+    if variant is not None:
+        set_command.extend(['-variant', variant])
+    if call(set_command) == 0:
         print 'Successfully set keyboard to Gelatin'
     else:
         print 'Failed to set keyboard to Gelatin'
