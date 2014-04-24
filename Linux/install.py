@@ -1,22 +1,21 @@
 #!/usr/bin/env python
-import shututil
-import date
-import datetime
+import shutil
+from datetime import date
+import time
 import os
 from xml.etree import ElementTree
-from future import with_statement
 from subprocess import call
 
 symbol_dirs = ['/usr/share/X11/xkb/symbols', '/etc/X11/xkb/symbols']
-
+rules_dir = '/usr/share/X11/xkb/rules'
 
 def add_layout():
     for symbol_dir in symbol_dirs:
         if os.path.exists(symbol_dir):
-            shututil.copyfile('gelatin_ansi-iso.xkb', os.path.join(symbol_dir, 'gelatin'))
-            shututil.copyfile(os.path.join(symbol_dir, 'evdev.xml', 'evdev.xml.backup' + date.isoformat(datetime.today())))
+            shutil.copyfile('gelatin_ansi-iso.xkb', os.path.join(symbol_dir, 'gelatin'))
+            shutil.copyfile(os.path.join(rules_dir, 'evdev.xml'), 'evdev.xml.backup' + date.today().isoformat())
             first = None
-            for filename in [os.path.join(symbol_dir, 'evdev.xml'), 'gelatin_evdev_section.xml']:
+            for filename in [os.path.join(rules_dir, 'evdev.xml'), 'gelatin_evdev_section.xml']:
                 data = ElementTree.parse(filename).getroot()
                 if first is None:
                     first = data
