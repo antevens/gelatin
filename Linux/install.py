@@ -18,6 +18,8 @@ def add_layout():
             for filename in [os.path.join(rules_dir, 'evdev.xml'), 'gelatin_evdev_section.xml']:
                 data = et.parse(filename).getroot()
                 if first is None:
+                    if data.find('gelatin'):
+                        break
                     first = data
                     first_layout = first.find('layoutList')
                 else:
@@ -37,6 +39,8 @@ def switch_layout(variant=None):
         print 'Successfully set keyboard to Gelatin'
     else:
         print 'Failed to set keyboard to Gelatin'
+        print 'Debug information:'
+        print call(set_command, '|', 'xkbcomp', '-')
 
 if __name__ == "__main__":
     add_layout()

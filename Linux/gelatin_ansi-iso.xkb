@@ -8,7 +8,7 @@ xkb_symbols "gelatin" {
     name[Group1]= "English (Gelatin)";
 
     // Alphanumeric section
-    key <TLDE> { [     aacute,   dead_grave,        asciitilde,      dead_tilde, ] };
+    key <TLDE> { [     aacute,   dead_grave,        asciitilde,      dead_tilde ] };
     key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
     key <AE02> { [            2,           at,       masculine,      twosuperior ] };
     key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
