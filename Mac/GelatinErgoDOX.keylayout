@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="0" id="169" name="GelatinErgoDOX" maxout="2">
+<keyboard group="0" id="68" name="GelatinErgoDOX" maxout="2">
     <layouts>
         <layout first="0" last="0" modifiers="48" mapSet="ErgoDOX"/>
     </layouts>
