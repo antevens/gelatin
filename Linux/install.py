@@ -13,6 +13,7 @@ def add_layout():
     for symbol_dir in symbol_dirs:
         if os.path.exists(symbol_dir):
             shutil.copyfile('gelatin_ansi-iso.xkb', os.path.join(symbol_dir, 'gelatin'))
+            shutil.copyfile('gelatin_ergodox.xkb', os.path.join(symbol_dir, 'gelatin'))
             shutil.copyfile(os.path.join(rules_dir, 'evdev.xml'), 'evdev.xml.backup' + date.today().isoformat())
             first = None
             for filename in [os.path.join(rules_dir, 'evdev.xml'), 'gelatin_evdev_section.xml']:
