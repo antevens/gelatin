@@ -2,6 +2,7 @@
 import shutil
 from datetime import date
 import os
+import glob
 from xml.etree import ElementTree as et
 from subprocess import check_call
 
@@ -35,6 +36,9 @@ def add_layout():
 
 
 def switch_layout(variant=None):
+    # Remove cache
+    for cached_keymap in glob.glob("/var/lib/xkb/*xkm"):
+          os.remove(cached_keymap)
     set_command = ['setxkbmap', '-v', 'gelatin_ergodox']
     if variant is not None:
         set_command.extend(['-variant', variant])
