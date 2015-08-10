@@ -1,0 +1,68 @@
+// Gelatin symbols for xkb on X.Org Server 7.x
+// 2006-01-01 Shai Coleman, http://colemak.com/ . Public domain.
+// 2014 Jarl Stefansson, converted to Gelatin
+
+partial alphanumeric_keys
+xkb_symbols "gelatin_ergodox" {
+    include "gelatin"
+    name[Group1]= "English (Gelatin Ergodox)";
+
+    // Alphanumeric section
+    key <TLDE> { [     aacute,   dead_grave,        asciitilde,      dead_tilde ] };
+    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
+    key <AE02> { [            2,           at,       masculine,      twosuperior ] };
+    key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
+    key <AE04> { [            4,       dollar,            cent,         sterling ] };
+    key <AE05> { [            5,      percent,        EuroSign,              yen ] };
+    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
+    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
+    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
+    key <AE09> { [            9,         plus,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            0,        equal,  rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        minus,   underscore,     dead_tilde,       asciitilde ] };
+    key <AE12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+
+    key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
+    key <AD02> { [            w,            W,           aring,            Aring ] };
+    key <AD03> { [            e,            E,          eacute,           Eacute ] };
+    key <AD04> { [            r,            R,      dead_grave,       asciitilde ] };
+    key <AD05> { [            t,            T,           thorn,            THORN ] };
+    key <AD06> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
+    key <AD07> { [            u,            U,          uacute,           Uacute ] };
+    key <AD08> { [            i,            I,          iacute,           Iacute ] };
+    key <AD09> { [            o,            O,              oe,               OE ] };
+    key <AD10> { [            p,            P,          oslash,         Ooblique ] };
+    key <AD11> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+    key <AD12> { [   parenright,      greater,        multiply,         division ] };
+    key <BKSL> { [          bar,     question,      asciitilde,       asciitilde ] };
+
+    key <AC01> { [            a,            A,              ae,               AE ] };
+    key <AC02> { [            s,            S,          ssharp,           SSHARP ] };
+    key <AC03> { [            d,            D,             eth,              ETH ] };
+    key <AC04> { [            f,            F,          atilde,           Atilde ] };
+    key <AC05> { [            g,            G,     dead_ogonek,       asciitilde ] };
+    key <AC06> { [            h,            H,      dead_caron,       asciitilde ] };
+    key <AC07> { [            j,            J,         dstroke,          Dstroke ] };
+    key <AC08> { [            k,            K,  dead_abovering,       asciitilde ] };
+    key <AC09> { [            l,            L,         lstroke,          Lstroke ] };
+    key <AC10> { [    parenleft,         less,          endash,           emdash ] };
+    key <AC11> { [   apostrophe,     quotedbl,      odiaeresis,       Odiaeresis ] };
+
+    key <AB01> { [            z,            Z,              ae,               AE ] };
+    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] };
+    key <AB03> { [            c,            C,        ccedilla,         Ccedilla ] };
+    key <AB04> { [            v,            V,              oe,               OE ] };
+    key <AB05> { [            b,            B,      dead_breve,       asciitilde ] };
+    key <AB06> { [            n,            N,          aacute,           Aacute ] };
+    key <AB07> { [            m,            M,     dead_macron,       asciitilde ] };
+    key <AB08> { [        comma,    semicolon,    dead_cedilla,       asciitilde ] };
+    key <AB09> { [       period,        colon,      odiaeresis,       Odiaeresis ] };
+    key <AB10> { [        slash,    backslash,    questiondown,       asciitilde ] };
+
+    key <CAPS> { [dead_circumflex, dead_caron,      dead_breve,dead_inverted_breve ] };
+    key <LSGT> { [   dead_acute,   dead_grave,dead_doubleacute, dead_doublegrave ] };
+    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+
+    include "level3(ralt_switch)"
+};
+

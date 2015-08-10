@@ -6,14 +6,14 @@
       <configItem>
         <name>gelatin</name>
         <shortDescription>Global Ergonomic Latin Keyboard Layout</shortDescription>
-        <description>A colemak based keyboard layout optimised for use with any latin based character set</description>
+        <description>GlobalErgonomicLatin</description>
         <languageList><iso639Id>eng</iso639Id></languageList>
       </configItem>
       <variantList>
         <variant>
           <configItem>
-            <name>gelatin-ergodox</name>
-            <description>Ergodox variant of the Gelatin Keyboard Layout, assumes Gelatin firmware layout loaded on Teensy</description>
+            <name>ergodox</name>
+            <description>GlobalErgonomicLatinErgoDox</description>
           </configItem>
         </variant>
       </variantList>
