@@ -1,3 +1,5 @@
+Special
+
 R1	+9	1
 R4	)>	1
 R4	(<	1
@@ -14,7 +16,7 @@ R1	L-1	1.5
 R1	L0	1.5
 R2	TAB	1.5
 
-
+Available from ISO/International Kits
 R1	=0	1
 R4	.:	1
 R4	,;	1
