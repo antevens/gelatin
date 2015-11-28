@@ -19,8 +19,8 @@ xkb_symbols "gelatin_ergodox" {
     key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
     key <AE09> { [            9,         plus,  leftsinglequotemark,  leftdoublequotemark ] };
     key <AE10> { [            0,        equal,  rightsinglequotemark,  rightdoublequotemark ] };
-    key <AE11> { [        minus,   underscore,     dead_tilde,       asciitilde ] };
-    key <AE12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+    key <AE11> { [         minus,   underscore,     dead_tilde,       asciitilde ] };
+    key <AE12> { [   parenright,      greater,        multiply,         division ] };
 
     key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
     key <AD02> { [            w,            W,           aring,            Aring ] };
@@ -33,7 +33,7 @@ xkb_symbols "gelatin_ergodox" {
     key <AD09> { [            o,            O,              oe,               OE ] };
     key <AD10> { [            p,            P,          oslash,         Ooblique ] };
     key <AD11> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
-    key <AD12> { [   parenright,      greater,        multiply,         division ] };
+    key <AD12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
     key <BKSL> { [          bar,     question,      asciitilde,       asciitilde ] };
 
     key <AC01> { [            a,            A,              ae,               AE ] };

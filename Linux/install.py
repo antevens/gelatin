@@ -38,8 +38,8 @@ def add_layout():
 def switch_layout(variant=None):
     # Remove cache
     for cached_keymap in glob.glob("/var/lib/xkb/*xkm"):
-          os.remove(cached_keymap)
-    set_command = ['setxkbmap', '-v', 'gelatin_ergodox']
+        os.remove(cached_keymap)
+    set_command = ['setxkbmap', '-v', 'gelatin']
     if variant is not None:
         set_command.extend(['-variant', variant])
     if check_call(set_command) == 0:
@@ -51,5 +51,5 @@ def switch_layout(variant=None):
 
 if __name__ == "__main__":
     add_layout()
-#    switch_layout('ergodox')
-    switch_layout()
+    switch_layout('ergodox')
+#    switch_layout()

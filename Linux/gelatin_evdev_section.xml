@@ -7,7 +7,17 @@
         <name>gelatin</name>
         <shortDescription>Global Ergonomic Latin Keyboard Layout</shortDescription>
         <description>GlobalErgonomicLatin</description>
-        <languageList><iso639Id>eng</iso639Id></languageList>
+        <languageList>
+            <iso639Id>afr</iso639Id>
+            <iso639Id>alb</iso639Id>
+            <iso639id>baq</iso639id>
+            <iso639id>bel</iso639id>
+            <iso639id>ber</iso639id>
+            <iso639Id>eng</iso639Id>
+            <iso639Id>fra</iso639Id>
+            <iso639Id>isl</iso639Id>
+            <iso639Id>ger</iso639Id>
+        </languageList>
       </configItem>
       <variantList>
         <variant>
