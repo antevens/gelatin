@@ -8,7 +8,7 @@ xkb_symbols "gelatin" {
     name[Group1]= "English (Gelatin)";
 
     // Alphanumeric section
-    key <TLDE> { [     aacute,   dead_grave,        asciitilde,      dead_tilde ] };
+    key <TLDE> { [   dead_acute,   dead_grave,      asciitilde,      dead_tilde ] };
     key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
     key <AE02> { [            2,           at,       masculine,      twosuperior ] };
     key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
@@ -59,7 +59,7 @@ xkb_symbols "gelatin" {
     key <AB09> { [       period,        colon,      odiaeresis,       Odiaeresis ] };
     key <AB10> { [        slash,    backslash,    questiondown,       asciitilde ] };
 
-    key <CAPS> { [       aacute,   dead_grave,      BackSpace,        BackSpace ] };
+    key <CAPS> { [   dead_acute,   dead_grave,      BackSpace,        BackSpace ] };
     key <LSGT> { [        minus,   underscore,     dead_tilde,       asciitilde ] };
     key <SPCE> { [        space,        space,           space,     nobreakspace ] };
 
@@ -74,7 +74,7 @@ xkb_symbols "ergodox" {
     name[Group1]= "English (Gelatin Ergodox)";
 
     // Alphanumeric section
-    key <TLDE> { [     aacute,   dead_grave,        asciitilde,      dead_tilde ] };
+    key <TLDE> { [       aacute,   dead_grave,      asciitilde,      dead_tilde ] };
     key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
     key <AE02> { [            2,           at,       masculine,      twosuperior ] };
     key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
