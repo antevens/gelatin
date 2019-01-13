@@ -19,8 +19,8 @@ xkb_symbols "gelatin" {
     key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
     key <AE09> { [            9,         plus,  leftsinglequotemark,  leftdoublequotemark ] };
     key <AE10> { [            0,        equal,  rightsinglequotemark,  rightdoublequotemark ] };
-    key <AE11> { [  bracketleft,         less,          endash,           emdash ] };
-    key <AE12> { [ bracketright,      greater,        multiply,         division ] };
+    key <AE11> { [  parenleft,         less,          endash,           emdash ] };
+    key <AE12> { [ parenright,      greater,        multiply,         division ] };
 
     key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
     key <AD02> { [            w,            W,           aring,            Aring ] };
