@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import shutil
 from datetime import date
 import os
@@ -51,5 +52,5 @@ def switch_layout(variant=None):
 
 if __name__ == "__main__":
     add_layout()
-    switch_layout('ergodox')
-#    switch_layout()
+#    switch_layout('ergodox')
+    switch_layout()
