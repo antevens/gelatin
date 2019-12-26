@@ -1,6 +1,6 @@
 // Gelatin symbols for xkb on X.Org Server 7.x
 // 2006-01-01 Shai Coleman, http://colemak.com/ . Public domain.
-// 2014 Jarl Stefansson, converted to Gelatin
+// 2014 Antonia Stevens, converted to Gelatin
 
 partial alphanumeric_keys
 xkb_symbols "gelatin_ergodox" {
