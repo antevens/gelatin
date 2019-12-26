@@ -1,0 +1,5 @@
+Copy gelatin.xkb and gelatin_ergodox.xkb to C:\Program Files (x86)\Xming\xkb\symbols, gelatin and gelatin_ergodox respectivly.
+
+Edit the Xming startup entry and add -xkblayout gelatin -variant ergodox #not working right now,
+run terminal and use:
+setxkbmap -display :0 -print | xkbcomp - :10
