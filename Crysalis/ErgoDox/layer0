@@ -1,0 +1,370 @@
+{
+  "keymap": [
+    {
+      "keyCode": 226,
+      "label": "LAlt",
+      "verbose": "Left Alt"
+    },
+    {
+      "keyCode": 43,
+      "label": "Tab"
+    },
+    {
+      "keyCode": 100,
+      "label": "Alt. \\",
+      "verbose": "Non-US \\"
+    },
+    {
+      "keyCode": 224,
+      "label": "LCtrl",
+      "verbose": "Left Control"
+    },
+    {
+      "keyCode": 224,
+      "label": "LCtrl",
+      "verbose": "Left Control"
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 30,
+      "label": "1"
+    },
+    {
+      "keyCode": 20,
+      "label": "Q"
+    },
+    {
+      "keyCode": 17,
+      "label": "N"
+    },
+    {
+      "keyCode": 29,
+      "label": "Z"
+    },
+    {
+      "keyCode": 227,
+      "label": "LGui",
+      "verbose": "Left Gui"
+    },
+    {
+      "keyCode": 41,
+      "label": "Esc"
+    },
+    {
+      "keyCode": 31,
+      "label": "2"
+    },
+    {
+      "keyCode": 26,
+      "label": "W"
+    },
+    {
+      "keyCode": 21,
+      "label": "R"
+    },
+    {
+      "keyCode": 27,
+      "label": "X"
+    },
+    {
+      "keyCode": 226,
+      "label": "LAlt",
+      "verbose": "Left Alt"
+    },
+    {
+      "keyCode": 225,
+      "label": "LShift",
+      "verbose": "Left Shift"
+    },
+    {
+      "keyCode": 32,
+      "label": "3"
+    },
+    {
+      "keyCode": 9,
+      "label": "F"
+    },
+    {
+      "keyCode": 22,
+      "label": "S"
+    },
+    {
+      "keyCode": 6,
+      "label": "C"
+    },
+    {
+      "keyCode": 51,
+      "label": ";"
+    },
+    {
+      "keyCode": 42,
+      "label": "BSpc",
+      "verbose": "Backspace"
+    },
+    {
+      "keyCode": 33,
+      "label": "4"
+    },
+    {
+      "keyCode": 19,
+      "label": "P"
+    },
+    {
+      "keyCode": 23,
+      "label": "T"
+    },
+    {
+      "keyCode": 25,
+      "label": "V"
+    },
+    {
+      "keyCode": 76,
+      "label": "Del"
+    },
+    {
+      "keyCode": 230,
+      "label": "RAlt",
+      "verbose": "AltGr"
+    },
+    {
+      "keyCode": 34,
+      "label": "5"
+    },
+    {
+      "keyCode": 10,
+      "label": "G"
+    },
+    {
+      "keyCode": 7,
+      "label": "D"
+    },
+    {
+      "keyCode": 5,
+      "label": "B"
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 17451,
+      "label": "1",
+      "extraLabel": "ShiftTo"
+    },
+    {
+      "keyCode": 230,
+      "label": "RAlt",
+      "verbose": "AltGr"
+    },
+    {
+      "keyCode": 47,
+      "label": "["
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 51,
+      "label": ";"
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 227,
+      "label": "LGui",
+      "verbose": "Left Gui"
+    },
+    {
+      "keyCode": 230,
+      "label": "RAlt",
+      "verbose": "AltGr"
+    },
+    {
+      "keyCode": 48,
+      "label": "]"
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 46,
+      "label": "="
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 231,
+      "label": "RGui",
+      "verbose": "Right Gui"
+    },
+    {
+      "keyCode": 35,
+      "label": "6"
+    },
+    {
+      "keyCode": 13,
+      "label": "J"
+    },
+    {
+      "keyCode": 11,
+      "label": "H"
+    },
+    {
+      "keyCode": 14,
+      "label": "K"
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 17451,
+      "label": "1",
+      "extraLabel": "ShiftTo"
+    },
+    {
+      "keyCode": 36,
+      "label": "7"
+    },
+    {
+      "keyCode": 15,
+      "label": "L"
+    },
+    {
+      "keyCode": 4,
+      "label": "A"
+    },
+    {
+      "keyCode": 16,
+      "label": "M"
+    },
+    {
+      "keyCode": 53,
+      "label": "`"
+    },
+    {
+      "keyCode": 230,
+      "label": "RAlt",
+      "verbose": "AltGr"
+    },
+    {
+      "keyCode": 37,
+      "label": "8"
+    },
+    {
+      "keyCode": 24,
+      "label": "U"
+    },
+    {
+      "keyCode": 8,
+      "label": "E"
+    },
+    {
+      "keyCode": 54,
+      "label": ","
+    },
+    {
+      "keyCode": 46,
+      "label": "="
+    },
+    {
+      "keyCode": 44,
+      "label": "Space"
+    },
+    {
+      "keyCode": 38,
+      "label": "9"
+    },
+    {
+      "keyCode": 28,
+      "label": "Y"
+    },
+    {
+      "keyCode": 12,
+      "label": "I"
+    },
+    {
+      "keyCode": 55,
+      "label": "."
+    },
+    {
+      "keyCode": 230,
+      "label": "RAlt",
+      "verbose": "AltGr"
+    },
+    {
+      "keyCode": 229,
+      "label": "RShift",
+      "verbose": "Right Shift"
+    },
+    {
+      "keyCode": 39,
+      "label": "0"
+    },
+    {
+      "keyCode": 52,
+      "label": "'"
+    },
+    {
+      "keyCode": 18,
+      "label": "O"
+    },
+    {
+      "keyCode": 56,
+      "label": "/"
+    },
+    {
+      "keyCode": 231,
+      "label": "RGui",
+      "verbose": "Right Gui"
+    },
+    {
+      "keyCode": 40,
+      "label": "Enter"
+    },
+    {
+      "keyCode": 45,
+      "label": "-"
+    },
+    {
+      "keyCode": 49,
+      "label": "\\"
+    },
+    {
+      "keyCode": 45,
+      "label": "-"
+    },
+    {
+      "keyCode": 228,
+      "label": "RCtrl",
+      "verbose": "Right Control"
+    },
+    {
+      "keyCode": 228,
+      "label": "RCtrl",
+      "verbose": "Right Control"
+    },
+    {
+      "keyCode": 0,
+      "label": "XXX",
+      "verbose": "Disabled"
+    }
+  ],
+  "palette": []
+}
