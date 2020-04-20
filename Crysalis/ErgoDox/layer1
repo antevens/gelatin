@@ -99,9 +99,10 @@
       "label": "Down"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 22710,
+      "label": "Track-",
+      "extraLabel": "Media",
+      "verbose": "Prev. track"
     },
     {
       "keyCode": 65535,
@@ -118,18 +119,20 @@
       "label": "F4"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 23785,
+      "label": "Vol+",
+      "extraLabel": "Media",
+      "verbose": "Volume up"
     },
     {
       "keyCode": 79,
       "label": "Right"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 23786,
+      "label": "Vol-",
+      "extraLabel": "Media",
+      "verbose": "Volume down"
     },
     {
       "keyCode": 65535,
@@ -146,18 +149,20 @@
       "label": "F5"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 22733,
+      "label": "Play",
+      "extraLabel": "Media",
+      "verbose": "Play / pause"
     },
     {
       "keyCode": 77,
       "label": "End"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 22709,
+      "label": "Track+",
+      "extraLabel": "Media",
+      "verbose": "Next track"
     },
     {
       "keyCode": 65535,
@@ -175,9 +180,9 @@
       "verbose": "Transparent"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 19682,
+      "label": "Mute",
+      "extraLabel": "Media"
     },
     {
       "keyCode": 65535,
@@ -185,9 +190,9 @@
       "verbose": "Transparent"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 22711,
+      "label": "Stop",
+      "extraLabel": "Media"
     },
     {
       "keyCode": 65535,
