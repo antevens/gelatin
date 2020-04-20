@@ -15,9 +15,9 @@
       "verbose": "Non-US \\"
     },
     {
-      "keyCode": 224,
-      "label": "LCtrl",
-      "verbose": "Left Control"
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 224,
@@ -97,8 +97,9 @@
       "label": "C"
     },
     {
-      "keyCode": 51,
-      "label": ";"
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 42,
@@ -255,8 +256,9 @@
       "label": "M"
     },
     {
-      "keyCode": 53,
-      "label": "`"
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 230,
@@ -280,8 +282,9 @@
       "label": ","
     },
     {
-      "keyCode": 46,
-      "label": "="
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 44,
@@ -339,8 +342,8 @@
       "label": "Enter"
     },
     {
-      "keyCode": 45,
-      "label": "-"
+      "keyCode": 53,
+      "label": "`"
     },
     {
       "keyCode": 49,
@@ -351,9 +354,9 @@
       "label": "-"
     },
     {
-      "keyCode": 228,
-      "label": "RCtrl",
-      "verbose": "Right Control"
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 228,

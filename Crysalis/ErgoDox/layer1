@@ -40,9 +40,8 @@
       "verbose": "Transparent"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 74,
+      "label": "Home"
     },
     {
       "keyCode": 65535,
@@ -119,16 +118,18 @@
       "label": "F4"
     },
     {
-      "keyCode": 74,
-      "label": "Home"
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 79,
       "label": "Right"
     },
     {
-      "keyCode": 77,
-      "label": "End"
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
     },
     {
       "keyCode": 65535,
@@ -150,9 +151,8 @@
       "verbose": "Transparent"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 77,
+      "label": "End"
     },
     {
       "keyCode": 65535,
@@ -205,9 +205,9 @@
       "verbose": "Print Screen"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 71,
+      "label": "ScrlLK",
+      "verbose": "Scroll Lock"
     },
     {
       "keyCode": 65535,
@@ -238,9 +238,8 @@
       "label": "Insert"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 72,
+      "label": "Pause"
     },
     {
       "keyCode": 98,
@@ -349,22 +348,19 @@
       "label": "F10"
     },
     {
-      "keyCode": 68,
-      "label": "F11"
+      "keyCode": 87,
+      "label": "+",
+      "extraLabel": "Numpad"
     },
     {
-      "keyCode": 69,
-      "label": "F12"
+      "keyCode": 85,
+      "label": "*",
+      "extraLabel": "Numpad"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
-    },
-    {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 99,
+      "label": ".",
+      "extraLabel": "Numpad"
     },
     {
       "keyCode": 65535,
@@ -382,9 +378,14 @@
       "verbose": "Transparent"
     },
     {
-      "keyCode": 65535,
-      "label": "",
-      "verbose": "Transparent"
+      "keyCode": 84,
+      "label": "/",
+      "extraLabel": "Numpad"
+    },
+    {
+      "keyCode": 86,
+      "label": "-",
+      "extraLabel": "Numpad"
     },
     {
       "keyCode": 65535,
