@@ -51,6 +51,6 @@ def switch_layout(variant=None):
         print(check_call(set_command, '|', 'xkbcomp', '-'))
 
 if __name__ == "__main__":
-    add_layout()
-#    switch_layout('ergodox')
-    switch_layout()
+#    add_layout()
+    switch_layout('ergodox')
+#    switch_layout()
